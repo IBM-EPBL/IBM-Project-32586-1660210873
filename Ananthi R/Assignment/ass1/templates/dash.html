@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<link rel="stylesheet" href="static/dash.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body onload="myload()">
+
+
+    <!--Header section start-->
+    <header>
+        
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="#" onclick="openAbout()">about</a>
+            <a href="#" >Contact us</a>
+           
+            <a class="feed" id="feedback">feedback</a>
+           
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="{{url_for('logout')}}" class="fas fa-sign-in-alt"></a>
+            
+        </div>
+    </header>
+    <div class="back">
+    
+    <!-- Header section ends-->
+    <!--Home section start-->
+    <section class="home" id="home-section"><br><br><br><br>
+<h1>Hello you are logged in!!</h1>
+
+ 
+ </div>
+</div>
+<!--Add ends-->
+</body>
+
+</html>
