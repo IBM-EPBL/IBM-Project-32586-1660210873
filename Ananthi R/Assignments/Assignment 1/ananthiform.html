@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Assignment-1 Form</title>
     <style>
     body {
         display: flex;
@@ -12,55 +12,68 @@
         justify-content: center;
         height: 100vh;
         font-family: cursive;
-      }
-    
-     input,
+		
+    }
+    input,
         textarea {
         width: 100%;
         padding: 5px;
         outline: none;
-      }
+		border-radius: 3px;
+    }
     
-      label {
-        line-height: 1.9rem;
-      }
+    label {
+       line-height: 1.9rem;
+    }
     
-      input[type="submit"] {
+    input[type="submit"] {
        transform: translate(2.2%);
        padding: 3px;
        margin-top: 0.6rem;
        font-family: cursive;
        font-weight: bold;
-      }
+    }
+	#submit{
+		width: 150px;
+		height: 40px;
+		border-radius: 5px;
+		margin-left: 70px;
+	}
+
+	#submit:hover{
+		background-color: lightgreen;
+		cursor: pointer;
+		color: black;
+	}
     
-     fieldset {
+    fieldset {
        padding: 20px 40px;
-     }
+    }
      </style>
      <script>
         function check(){
-            document.writeln("  Hi, This is "+document.ananthi.name.value+". I am "+document.ananthi.age.value+". I'm doing my "+document.sugaForm.qualification.value+". My email id is "+document.ananthi.email.value);
+            document.writeln("  Hi!! this is "+document.ananthi.name.value+". I am "+document.ananthi.age.value+". I'm doing "+document.ananthi.qualification.value+". My email id is "+document.ananthi.email.value);
         }
      </script>
 </head>
 <body>
     <form name="ananthi">
         <fieldset>
-          <legend>Contact me</legend>
+          <legend style="font-weight: bold; color: blue; font-size: 20px">CONTACT ME</legend>
           <div class="form-control">
-            <label for="name">Name</label>
+            <label for="name" style="font-size: 18px">Name</label>
             <input type="name" id="name" placeholder="Enter your name" required />
           </div>
-    
+		<div class="form-control">
+            <label for="qualification" style="font-size: 18px">Qualification</label>
+            <input type="qualification" id="qualification" placeholder="Enter your qualification" required />
+          </div>
           <div class="form-control">
-            <label for="age">Age</label>
+            <label for="age" style="font-size: 18px">Age</label>
             <input type="age" id="age" placeholder="Enter your age" required />
           </div>
 
-          <div class="form-control">
-            <label for="qualification">Name</label>
-            <input type="qualification" id="qualification" placeholder="Enter your qualification" required />
-          </div>
+          
 
           <div class="form-control">
             <label for="email">Email</label>
@@ -72,7 +85,7 @@
             />
           </div>
 
-          <input type="submit" class="submit-btn" onclick="check(); return false"/>
+          <input type="submit" id="submit" class="submit-btn" onclick="check(); return false"/>
         </fieldset>
     </form>
 </body>
