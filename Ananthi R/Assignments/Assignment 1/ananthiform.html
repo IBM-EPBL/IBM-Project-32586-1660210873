@@ -10,14 +10,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 90vh;
         font-family: cursive;
 		
     }
+	.bg1 img{
+		margin-top: 50px;
+		margin-left: 220px;
+		width: 370px;
+		
+	}
     input,
         textarea {
         width: 100%;
-        padding: 5px;
+        padding: 8px;
         outline: none;
 		border-radius: 3px;
     }
@@ -33,22 +39,43 @@
        font-family: cursive;
        font-weight: bold;
     }
+	fieldset {
+       padding: 20px 40px;
+	   
+    }
+	input[type="submit"]
+    {
+      border: none;
+      outline: none;
+      height: 40px;
+      background: #1c8adb;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 10px;
+    }
+	input[type="submit"]:hover
+    {
+      cursor: pointer;
+      background: #e39217;
+      color: #000;
+    }
 	#submit{
 		width: 150px;
 		height: 40px;
 		border-radius: 5px;
-		margin-left: 70px;
+		margin-left: 75px;
 	}
 
-	#submit:hover{
-		background-color: lightgreen;
-		cursor: pointer;
+	#submit{
+		margin-top: 9px;
+		background: green;}
+		#submit:hover{
+		background-color: orangered;
+		transform: scale(0.9);
+		transition: 0.5s;
 		color: black;
+		cursor: pointer;
 	}
-    
-    fieldset {
-       padding: 20px 40px;
-    }
      </style>
      <script>
         function check(){
@@ -57,6 +84,7 @@
      </script>
 </head>
 <body>
+	
     <form name="ananthi">
         <fieldset>
           <legend style="font-weight: bold; color: blue; font-size: 20px">CONTACT ME</legend>
@@ -88,5 +116,8 @@
           <input type="submit" id="submit" class="submit-btn" onclick="check(); return false"/>
         </fieldset>
     </form>
+	<div class="bg1">
+         <img src="contact.png"> 
+    </div>
 </body>
 </html>
