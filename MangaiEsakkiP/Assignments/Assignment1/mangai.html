@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: cursive;
+      }
+    
+     input,
+        textarea {
+        width: 100%;
+        padding: 5px;
+        outline: none;
+      }
+    
+      label {
+        line-height: 1.9rem;
+      }
+    
+      input[type="submit"] {
+       transform: translate(2.2%);
+       padding: 3px;
+       margin-top: 0.6rem;
+       font-family: cursive;
+       font-weight: bold;
+      }
+    
+     fieldset {
+       padding: 20px 40px;
+     }
+     </style>
+     <script>
+        function check(){
+            document.writeln("  Hi, This is "+document.nithish.name.value+". I am "+document.nithish.age.value+". I'm doing my "+document.nithish.qualification.value+". My email id is "+document.nithish.email.value);
+        }
+     </script>
+</head>
+<body>
+    <form name="Mangai">
+        <fieldset>
+          <legend>Contact me</legend>
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="name" id="name" placeholder="Enter your name" required />
+          </div>
+    
+          <div class="form-control">
+            <label for="age">Age</label>
+            <input type="age" id="age" placeholder="Enter your age" required />
+          </div>
+
+          <div class="form-control">
+            <label for="qualification">Name</label>
+            <input type="qualification" id="qualification" placeholder="Enter your qualification" required />
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <input type="submit" class="submit-btn" onclick="check(); return false"/>
+        </fieldset>
+    </form>
+</body>
+</html>
