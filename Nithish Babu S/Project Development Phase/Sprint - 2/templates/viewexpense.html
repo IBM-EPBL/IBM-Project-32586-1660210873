@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../static/css/Dashboard.css">
+    <link rel="stylesheet" href="../static/font/css/all.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>PERSONAL EXPENSE TRACKER</h2>
+            <a href="profile" id="pro">Profile</a>
+			<a href="addexpense" id="ve">Add Expense</a>
+            <a href="viewexpense" id="pd">Purchase Details</a>
+            <a href="wallet" id="aw">Add Wallet and Limit</a>
+			<a href="viewwallet" id="vw">View Wallet</a>
+			<a href="viewlimit" id="vl">View Limit</a>
+        </div>
+        <div class="right">
+            <div class="top">
+                <a href="logout">Logout</a>
+            </div>
+            <div class="purchase" id="pak">
+                <div class="cont">
+					<!--<div class="dk1">
+						<form action="/viewexpense"> 
+							<button class="button" id="triggerv"><span>VIEW PRODUCT</span> </button>
+						</form>
+					</div>-->
+                    <div class="viw">
+                        <table>
+                            <tr>
+								<!--<th>USERID</th>-->
+                                <th>PRODUCT NAME</th>
+                                <th>PRICE</th>
+								
+                            </tr>
+							{% for i in range(0,lenuser) %}
+							<tr>
+								{% if userid[i]==user %}
+								<td>{{ product[i] }}</td>
+								<td>{{ price[i] }}</td>
+								{% endif %}
+									{% endfor %}
+                            </tr>
+                        </table>
+                    </div>                
+                </div>
+            </div>
+            <script>
+                
+                function dis(){
+                    document.getElementById("fom").style.display="block";
+                }
+            </script>
+        </div>
+        </div>
+</body>
+</html>

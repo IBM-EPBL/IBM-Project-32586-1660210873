@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(163, 120, 12);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.right{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+.right .top{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+.right .bottom{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,rgb(226, 226, 222),rgb(223, 218, 218));
+}
+.left h2{
+    text-align: center;
+    margin-top: 60px;
+}
+#pro{
+    margin-top: 40px;
+}
+.left a{
+    text-decoration: none;
+    color: wheat;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 70px;
+    padding-top: 22px;
+    transition: 1.2s;
+    border-bottom: 0.3px solid rgba(0, 0, 0, 0.11);
+}
+.left a:hover{
+    background:linear-gradient(to right top,rgba(0, 0, 0, 0.432) 0%,rgba(172, 148, 13, 0.74) 60%);
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px 5px rgb(48, 45, 45);
+    color:black;
+}
+.top a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    background-color: goldenrod;
+    padding-top: 15px;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 50px;
+    text-align: center;    
+ 
+}
+
+.top a:hover{
+   color: wheat;
+   background: linear-gradient(to right top,rgba(0, 0, 0, 0.432) 0%,rgba(143, 124, 20, 0.74) 60%);
+}
+
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.profile .details h2{
+    text-align:center;
+    margin-top:100px;
+	color:darkgreen;
+	
+}
+.details{
+
+    width: 50%;
+    height: 300px;
+    background-color: rgb(151, 144, 102);
+    border-radius: 10px;
+    padding: 40px;
+    margin-left: 250px;
+	position:relative;
+	top:100px;
+
+}
+.purchase{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 55px;
+}
+.purchase .cont{
+    width: 98%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgb(151, 144, 102);
+
+}
+.dk{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+.dk form{
+    width: 400px;
+}
+.dk button{
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    display: block;
+    border: none;
+    background-color: rgb(8, 36, 8);
+    color: white;
+}
+.dk button:hover{
+    background-color: rgb(11, 129, 11);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.dk form input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+}
+#kl{
+    width: 90px;
+    height: 40px;
+    background-color: goldenrod;
+}
+#kl:hover{
+    cursor: pointer;
+    background-color: rgb(184, 140, 28);
+}
+.viw{
+    width: 97%;
+    height: 85%;
+    background-color: blanchedalmond;
+    border: 5px;
+    margin-left: 16px;
+	margin-top: 40px;
+    overflow: scroll;
+}
+table{
+    width: 100%;
+}
+
+table tr td{
+    width: 120px;
+    padding: 9px;
+    border: 1px solid gray;
+}
+.addwalet{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+
+}
+.salary{
+    width: 48%;
+    height: 45%;
+    border-radius: 9px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction:column;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+	margin-top: 40px;
+    
+}
+
+.bt:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.salary i {
+    font-size: 70px;
+    text-align: center;
+}
+.addwalet h2{
+    text-align: center;
+}
+.addwalet h1{
+    text-align: center;
+}
+.salary input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 250px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.salary .bt{
+    background-color: goldenrod;
+    width: 100px;
+    height: 40px;
+    margin-left: 60px;
+}
+.salary .bt:hover{
+	background-color: green;
+	cursor: pointer;
+}
+#fom{
+    display: none;
+}
+
+#ma1,#ma2{
+    width: 48%;
+    height: 36%;
+}
+
+#fom input::placeholder{
+    color: black;
+}
+
+.dk1 button{
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    display: block;
+    border: none;
+    background-color: rgb(8, 36, 8);
+    color: white;
+	margin-left: 850px;
+	margin-top: -122px;
+}
+.dk1 button:hover{
+    background-color: rgb(11, 129, 11);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
