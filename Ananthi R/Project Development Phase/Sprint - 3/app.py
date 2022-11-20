@@ -294,7 +294,7 @@ def sendmail():
             mailid=user2[i]
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("ananthi.r3105@gmail.com", "rzzqfkqhrvaijhmk")
+    s.login("ananthi.r3105@gmail.com", "***************")
     s.sendmail('ananthi.r3105@gmail.com', mailid, 'You have exceeded the limit.So purchase accordingly!!')
     print('mail sent')
 
