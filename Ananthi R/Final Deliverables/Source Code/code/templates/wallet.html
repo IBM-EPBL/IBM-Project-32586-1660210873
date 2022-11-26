@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/Dashboard.css">
+    <link rel="stylesheet" href="../static/font/css/all.min.css">
+    <title>Add Wallet</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>PERSONAL EXPENSE TRACKER</h2>
+            <a href="profile" id="pro">Profile</a>
+			<a href="addexpense" id="ve">Add Expense</a>
+            <a href="viewexpense" id="pd">Purchase Details</a>
+            <a href="wallet" id="aw">Add Wallet and Limit</a>
+			<a href="viewwallet" id="vw">View Wallet</a>
+			<a href="viewlimit" id="vl">View Limit</a>
+        </div>
+        <div class="right">
+            <div class="top">
+                <a href="logout">Logout</a>
+            </div>
+            <div class="addwalet" id="aus">
+                <div class="salary">
+                    <form action="/wallet" method="post">
+					<div class="msg">{{ msg }}</div>
+                        <h2>ENTER YOUR SALARY</h2>
+                        <input type="number" name="sal" placeholder="Enter Salary"><br><br>
+                        <input type="submit" value="UPDATE" class="bt">
+                    </form>
+                </div>
+
+                <div class="salary">
+                    <form action="/limit" method="post">
+                        <h2>SET LIMIT</h2>
+                        <input type="number" name="lim" placeholder="Enter Limit"><br><br>
+                        <input type="submit" value="UPDATE" class="bt">
+                    </form>
+                </div>
+
+                
+            </div>
+        </div>
+        </div>
+</body>
+</html>

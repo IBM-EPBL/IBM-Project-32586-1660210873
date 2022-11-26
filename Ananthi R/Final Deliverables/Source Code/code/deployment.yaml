@@ -1,0 +1,20 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: personalexpensetracker
+ spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: personalexpensetracker
+   template:
+     metadata:
+       labels:
+         app: personalexpensetracker
+     spec:
+       containers:
+       - name: personalexpensetracker
+         image: icr.io/ananthiexpense/personalexpensetracker
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 8080
